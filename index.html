@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoría Business | Estrategia de Negocios en La Gloria</title>
+    
+    <!-- SEO On-Page -->
+    <meta name="description" content="Servicios de consultoría estratégica de negocios por Cecilia Cordero Abello. Análisis informativo y estructuración de procesos organizacionales en La Gloria, Colombia.">
+    <meta name="keywords" content="consultoría de negocios, estrategia empresarial, análisis organizacional, consultoría informativa, estructuración de procesos, Cecilia Cordero Abello">
+    <meta name="author" content="Cecilia Cordero Abello">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.tudominio.com/">
+
+    <!-- SEO Técnico: Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Consultoría Business",
+      "description": "Consultoría estratégica y análisis de procesos organizacionales.",
+      "telephone": "+573017865674",
+      "email": "carlosbaseball06@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cra. 1b # 5A-29",
+        "addressLocality": "La Gloria",
+        "addressCountry": "CO"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Variables y Reset */
+        :root {
+            --primary-color: #0A2540; /* Azul Corporativo */
+            --secondary-color: #00D4FF; /* Cyan Tecnológico */
+            --text-dark: #333333;
+            --text-light: #F4F5F7;
+            --bg-light: #FFFFFF;
+            --bg-gray: #F6F9FC;
+            --font-headers: 'Playfair Display', serif;
+            --font-body: 'Roboto', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-body); color: var(--text-dark); background-color: var(--bg-light); line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+        /* Tipografía y Títulos */
+        h1, h2, h3 { font-family: var(--font-headers); color: var(--primary-color); line-height: 1.2; }
+        .section-title { font-size: 2.5rem; text-align: center; margin-bottom: 3rem; position: relative; }
+        .section-title::after { content: ''; display: block; width: 50px; height: 3px; background: var(--secondary-color); margin: 15px auto 0; }
+
+        /* Botones */
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 16px 32px;
+            font-size: 1rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 6px rgba(0,212,255,0.2);
+        }
+        .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,212,255,0.3); background-color: #00bce6; }
+
+        /* Header */
+        header { background-color: var(--primary-color); padding: 20px 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: var(--text-light); font-family: var(--font-headers); font-size: 1.5rem; font-weight: 700; }
+        .logo span { color: var(--secondary-color); }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a { color: var(--text-light); font-weight: 500; font-size: 0.9rem; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--secondary-color); }
+
+        /* Hero */
+        .hero { background: linear-gradient(135deg, var(--primary-color) 0%, #113a63 100%); color: var(--text-light); padding: 120px 0; text-align: center; }
+        .hero h1 { color: var(--text-light); font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; font-weight: 300; max-width: 800px; margin: 0 auto 40px; color: #a1b0c0; }
+
+        /* Beneficios */
+        .benefits { padding: 80px 0; background-color: var(--bg-gray); }
+        .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .benefit-card { background: var(--bg-light); padding: 40px 30px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); border-top: 4px solid var(--secondary-color); }
+        .benefit-card h3 { font-size: 1.3rem; margin-bottom: 15px; }
+        .benefit-card p { font-size: 0.95rem; color: #666; }
+
+        /* Servicios / Propuesta */
+        .services { padding: 80px 0; }
+        .service-row { display: flex; align-items: center; gap: 50px; margin-bottom: 60px; }
+        .service-row:nth-child(even) { flex-direction: row-reverse; }
+        .service-text { flex: 1; }
+        .service-text h3 { font-size: 2rem; margin-bottom: 20px; }
+        .service-text p { color: #555; margin-bottom: 15px; }
+        .service-img { flex: 1; background: var(--bg-gray); height: 300px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #aaa; font-style: italic; border: 1px dashed #ccc; }
+
+        /* Prueba Social (Autoridad / Metodología) */
+        .authority { background-color: var(--primary-color); color: var(--text-light); padding: 80px 0; text-align: center; }
+        .authority h2 { color: var(--text-light); }
+        .authority-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 50px; }
+        .authority-item h4 { font-size: 1.2rem; color: var(--secondary-color); margin-bottom: 15px; font-family: var(--font-body); }
+        .authority-item p { font-size: 0.9rem; font-weight: 300; color: #cbd5e1; }
+
+        /* Transparencia (Cumplimiento estricto) */
+        .transparency { background-color: #fff3cd; color: #856404; padding: 30px 20px; text-align: center; border: 1px solid #ffeeba; margin: 40px auto; max-width: 900px; border-radius: 4px; font-size: 0.9rem; }
+
+        /* Contacto */
+        .contact { padding: 80px 0; background-color: var(--bg-gray); }
+        .contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; background: var(--bg-light); padding: 50px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .contact-info h3 { margin-bottom: 20px; }
+        .info-item { margin-bottom: 20px; display: flex; flex-direction: column; }
+        .info-item strong { color: var(--primary-color); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        .info-item span { color: #555; }
+        
+        .form-group { margin-bottom: 20px; }
+        .form-control { width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 4px; font-family: var(--font-body); transition: border 0.3s; }
+        .form-control:focus { outline: none; border-color: var(--secondary-color); }
+        textarea.form-control { height: 120px; resize: vertical; }
+        .form-message { display: none; padding: 15px; background: #d4edda; color: #155724; border-radius: 4px; margin-top: 20px; text-align: center; font-weight: 500; }
+
+        /* Footer */
+        footer { background-color: #051320; color: #718096; padding: 40px 0 20px; text-align: center; font-size: 0.85rem; }
+        .footer-links { margin-bottom: 20px; }
+        .footer-links a { color: #a0aec0; margin: 0 15px; transition: color 0.3s; }
+        .footer-links a:hover { color: var(--secondary-color); }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .service-row, .service-row:nth-child(even), .contact-wrapper { flex-direction: column; grid-template-columns: 1fr; }
+            .authority-grid { grid-template-columns: 1fr; }
+            .contact-wrapper { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">Consultoría <span>Business</span></a>
+            <nav class="nav-links">
+                <a href="#enfoque">Enfoque</a>
+                <a href="#servicios">Análisis</a>
+                <a href="#contacto">Solicitar Sesión</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Claridad Estructural para Procesos Empresariales</h1>
+                <p>Consultoría estratégica de carácter informativo orientada a la identificación de brechas operativas y al rediseño de modelos de gestión corporativa.</p>
+                <a href="#contacto" class="cta-btn">Agenda una Sesión Exploratoria Informativa</a>
+            </div>
+        </section>
+
+        <!-- Sección de Transparencia (Requisito estricto) -->
+        <div class="container">
+            <div class="transparency">
+                <strong>Aviso de Transparencia Informativa:</strong> Este portal web es operado por Cecilia Cordero Abello y tiene fines exclusiva y estrictamente informativos y analíticos. No ofrecemos servicios contables colegiados, no garantizamos retornos de inversión (ROI), no emitimos promesas financieras ni comercializamos esquemas de enriquecimiento. Nuestro enfoque es la revisión teórica y estructural de procesos de negocio.
+            </div>
+        </div>
+
+        <!-- Beneficios -->
+        <section id="enfoque" class="benefits">
+            <div class="container">
+                <h2 class="section-title">Pilares de Nuestro Análisis</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>Mapeo de Procesos</h3>
+                        <p>Desglosamos las operaciones diarias de su organización en diagramas de flujo lógicos para identificar cuellos de botella y redundancias comunicativas.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Diagnóstico Estructural</h3>
+                        <p>Evaluamos la coherencia entre el organigrama actual y los objetivos a mediano plazo, aportando perspectivas informativas sobre mejores prácticas de la industria.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Estandarización Teórica</h3>
+                        <p>Proveemos modelos documentales para que su equipo pueda establecer manuales de funciones claros, mitigando la dependencia de conocimiento no documentado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios / Valor -->
+        <section id="servicios" class="services">
+            <div class="container">
+                <h2 class="section-title">Ejes de Intervención Informativa</h2>
+                
+                <div class="service-row">
+                    <div class="service-text">
+                        <h3>Auditoría Organizacional Interna</h3>
+                        <p>Un servicio analítico donde revisamos la manera en que fluye la información dentro de su empresa. Analizamos desde los métodos de reporte hasta la estructura de reuniones directivas.</p>
+                        <p>El resultado es un documento diagnóstico que señala áreas teóricas de mejora organizacional, sin intervenir directamente en su software financiero ni en sus decisiones patrimoniales.</p>
+                    </div>
+                    <div class="service-img">
+                        [Representación Visual de Flujo Organizacional]
+                    </div>
+                </div>
+
+                <div class="service-row">
+                    <div class="service-text">
+                        <h3>Diseño de Arquitectura de Negocios</h3>
+                        <p>Ayudamos a los directivos a repensar su modelo de negocio utilizando herramientas académicas y estratégicas (como análisis DOFA avanzado y matrices de priorización).</p>
+                        <p>El objetivo es brindar claridad conceptual para que los líderes empresariales de La Gloria y alrededores puedan tomar decisiones con una base teórica sólida.</p>
+                    </div>
+                    <div class="service-img">
+                        [Representación Visual de Matriz Estratégica]
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Autoridad y Metodología (Reemplazo de testimonios falsos) -->
+        <section class="authority">
+            <div class="container">
+                <h2 class="section-title" style="color: #fff;">Fundamentos de Nuestra Consultoría</h2>
+                <p style="max-width: 700px; margin: 0 auto; color: #cbd5e1;">Nuestra labor prescinde de afirmaciones emocionales. Nos basamos en principios comprobables de administración de empresas para emitir conceptos claros y objetivos.</p>
+                
+                <div class="authority-grid">
+                    <div class="authority-item">
+                        <h4>Objetividad Analítica</h4>
+                        <p>Análisis de datos cualitativos suministrados por la empresa sin sesgos internos ni conflictos de intereses corporativos.</p>
+                    </div>
+                    <div class="authority-item">
+                        <h4>Rigor Metodológico</h4>
+                        <p>Aplicación estricta de marcos de referencia académicos para la evaluación de estructuras organizacionales.</p>
+                    </div>
+                    <div class="authority-item">
+                        <h4>Confidencialidad Total</h4>
+                        <p>Manejo de la información bajo estrictos protocolos de privacidad, asegurando la protección de su modelo operativo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2 class="section-title">Hablemos de su Estructura Corporativa</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Información de Contacto</h3>
+                        <p style="margin-bottom: 30px; color: #666;">Contacte con nuestra oficina para programar una revisión inicial de su caso corporativo.</p>
+                        
+                        <div class="info-item">
+                            <strong>Dirección de Oficina</strong>
+                            <span>Cra. 1b # 5A-29<br>La Gloria, Colombia</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Correo Institucional</strong>
+                            <span>carlosbaseball06@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Línea Telefónica</strong>
+                            <span>3017865674</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Horario de Atención</strong>
+                            <span>Lunes a Domingo<br>8:00 am a 5:00 pm</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-box">
+                        <form id="consultForm">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="nombre" required placeholder="Nombre o Razón Social">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" required placeholder="Correo Electrónico de Contacto">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="sector" required placeholder="Sector o Industria (Ej. Logística)">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="mensaje" required placeholder="Describa brevemente el reto organizacional que enfrenta su empresa..."></textarea>
+                            </div>
+                            <button type="submit" class="cta-btn" style="width: 100%;">Agenda una Sesión Exploratoria</button>
+                            <div id="formSuccess" class="form-message">Su solicitud informativa ha sido registrada de manera segura. Nos pondremos en contacto en nuestro horario de atención.</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="politica-de-privacidad.html">Política de Privacidad</a>
+                <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
+            </div>
+            <p>&copy; <span id="year"></span> Consultoría Business por Cecilia Cordero Abello. Operando desde La Gloria, Colombia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script sin dependencias externas -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        document.getElementById('consultForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = this.querySelector('button[type="submit"]');
+            const msg = document.getElementById('formSuccess');
+            
+            btn.textContent = 'Procesando Solicitud...';
+            btn.style.opacity = '0.7';
+            btn.disabled = true;
+
+            // Simulación de envío segura sin recargas extrañas
+            setTimeout(() => {
+                this.reset();
+                btn.textContent = 'Agenda una Sesión Exploratoria';
+                btn.style.opacity = '1';
+                btn.disabled = false;
+                msg.style.display = 'block';
+                
+                setTimeout(() => {
+                    msg.style.display = 'none';
+                }, 7000);
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
